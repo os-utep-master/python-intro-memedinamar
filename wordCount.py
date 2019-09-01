@@ -15,9 +15,9 @@ newFile.close()
 dictionary = {}
 with open("outText.txt", 'r') as f:
     for line in f:
-        ana = line[:-1]
-        if ana in dictionary:
-            dictionary[ana] = dictionary.get(ana) + 1
+        str = line[:-1]
+        if str in dictionary:
+            dictionary[str] = dictionary.get(str) + 1
         else:
             dictionary[ana] = 1
 
